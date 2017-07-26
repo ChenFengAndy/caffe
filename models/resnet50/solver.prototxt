@@ -6,7 +6,7 @@ test_initialization: false
 
 display: 100
 
-max_iter: 2400000       # 60 epoch B=32
+max_iter: 3600000       # 60 epoch B=32
 base_lr:  0.001  	# B=32
 
 # DGX1 =================================
