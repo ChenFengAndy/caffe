@@ -39,9 +39,12 @@ class CenterLossLayer : public LossLayer<Ftype, Btype> {
   int M_;
   int K_;
   int N_;
+  bool COUNTED_;
   
   TBlob<Ftype> distance_;
   TBlob<Btype> variation_sum_;
+  TBlob<int> count_;
+  
 };
 
 }  // namespace caffe

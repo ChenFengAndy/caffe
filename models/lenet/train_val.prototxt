@@ -327,7 +327,7 @@ layer {
     }
     num_output: 10
   }
-  loss_weight: 0.01
+  loss_weight: 0.1
 }
 layer {
   name: "accuracy"

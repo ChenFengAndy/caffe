@@ -35,6 +35,8 @@ void CenterLossLayer<Ftype, Btype>::LayerSetUp(const vector<Blob*>& bottom,
 
   }  // parameter initialization
   this->param_propagate_down_.resize(this->blobs_.size(), true);
+
+  COUNTED_ = false;
 }
 
 template <typename Ftype, typename Btype>
@@ -50,6 +52,7 @@ void CenterLossLayer<Ftype, Btype>::Reshape(
   LossLayer<Ftype, Btype>::Reshape(bottom, top);
   distance_.ReshapeLike(*bottom[0]);
   variation_sum_.ReshapeLike(*this->blobs_[0]);
+  count_.Reshape(N_);
 }
 
 template <typename Ftype, typename Btype>
