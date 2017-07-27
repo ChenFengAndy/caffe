@@ -1,3 +1,5 @@
+This is a clone of Nvidia optimized Caffe 0.16.2 with optimized center loss for face recog tasks
+2017 7 27
 # Caffe
 
 Caffe is a deep learning framework made with expression, speed, and modularity in mind.
